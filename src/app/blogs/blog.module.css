@@ -1,0 +1,74 @@
+.main{
+    padding: min(6rem, 7%);
+}
+
+
+/*blogs page*/
+
+
+.blogSection div{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.blogSection h2{
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    text-align: center;
+    margin-top: 5dvh;
+    margin-bottom: 5dvh;
+    opacity: 85%;
+}
+.h1{
+    text-align: center;
+    font-size: clamp(2.5rem, 4vw, 3.8rem);
+}
+.hP{
+    font-family: var(--font-dm-sans);
+    font-size: clamp(1.5rem, 2vw, 1.8rem);
+    opacity: 0.8;
+    text-align: center;
+}
+
+.button{
+    padding: min(1.5rem, 2%);
+    background: linear-gradient(90deg, #A0A0A0 0%, #D6A354 100%);
+    align-self: self-start;
+    font-family: var(--font-dm-sans);
+    font-weight: 500;
+    font-size: clamp(1.1rem, 1.4vw, 1.4rem);
+    color: #0b0b0b;
+    border-radius: 0.3rem;
+}
+.button img{
+    height: 1.5rem;
+    filter: brightness(0);
+    transform: rotate(-45deg);
+}
+.blogSection article h3{
+    font-size: clamp(1.5rem, 2vw, 1.65rem);
+}
+.blogSection article{
+    width: min(33rem, 50%);
+    padding: min(1.5rem, 3%);
+    box-shadow: 0 0 0.5rem 0.05rem #0b0b0b;
+    display:flex;
+    flex-direction: column;
+    gap: 5dvh;
+}
+.img{
+    height: auto;
+    width: 100%;
+}
+.blogSection article p{
+    font-family: var(--font-source-sans);
+    font-size: clamp(1.45rem, 2vw, 1.55rem);
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .blogSection article{
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,95 @@
+.header {
+    padding: 2rem min(6rem, 7%);
+    height: 10dvh;
+    height: 10vh;
+}
+
+.navBar a,
+.navBar button {
+    font-size: clamp(1.75rem, 2vw, 2.1rem);
+    color: #0B0B0B;
+
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    border: none;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ctaNav {
+    background: linear-gradient(90deg, #A0A0A0 0%, #D6A354 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.popupDiv {
+    display: flex;
+    height: 60dvh;
+    width: min(80rem, 90%);
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    inset: 0;
+    flex-direction: column;
+
+    background: white;
+    z-index: 100;
+    box-shadow: 0 0 0.5rem 0.1rem #0B0B0B;
+    padding: 2rem;
+}
+.popupList .anchor {
+    list-style-type: none;
+}
+.popupDiv p{
+    font-family: var(--font-dm-sans);
+    font-weight: 600;
+    font-size: clamp(1.75rem, 2vw, 2.1rem);
+}
+.popupList{
+    display: flex;
+}
+.popupList li a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0.7rem;
+}
+.popupList button{
+    margin: 0 1rem;
+    border-radius: 50%;
+}
+.popupList img{
+    width: 4rem;
+    height: 4rem;
+}
+.popupDiv .exit{
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    font-size: clamp(1.8rem, 2.1vw, 2.7rem);
+    border: none;
+    background: transparent;
+}
+.ctabutton{
+    padding: 0.6em 1em;
+    font-size: clamp(1.5rem, 2.1vw, 2rem);
+    border-radius: 0.5rem;
+    border: none;
+    background: linear-gradient(90deg, #A0A0A0 0%, #D6A354 100%);
+    box-shadow: 0.1rem 0.1rem 0.2rem #0B0B0B, -0.2rem -0.2rem 0.5rem white;
+}
+.ctabutton:hover{
+    box-shadow: 0 0 0.2rem 0.1rem #0B0B0B;
+}
+@media (max-width: 768px) {
+    .ctaNav{
+        display: none;
+    }
+}

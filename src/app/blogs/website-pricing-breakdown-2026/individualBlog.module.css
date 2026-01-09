@@ -1,0 +1,107 @@
+.main{
+    padding: min(25rem, 20%);
+    padding-top: 15dvh;
+}
+.main header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main span img{
+    border-radius: 50%;
+    width: 3.5rem;
+    height: auto;
+}
+.main span{
+    font-size: clamp(1.45rem, 2vw, 1.9rem);
+    font-family: var(--font-dm-sans);
+    color: rgb(0, 0, 0, 0.7);
+    text-align: center;
+    display: block;
+    margin-bottom: 0;
+}
+.main h1{
+    font-size: clamp(2.5rem, 4vw, 4rem); 
+    text-align: center;
+}
+.main h2{
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    margin-bottom: 3dvh;
+}
+.main h3{
+    font-weight: 600;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin-top: 5dvh;
+}
+.main h4{
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 550;
+    font-family: var(--font-dm-sans);
+}
+.main ul li, .main p{
+    font-family: var(--font-source-sans);
+    font-size: clamp(1.45rem, 2vw, 1.9rem);
+}
+.main ul li{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.main p, .main ul{
+    margin-top: 4dvh;
+    margin-bottom: 4dvh;
+}
+.main .headerP{
+    text-align: center;
+    margin-top: 3dvh;
+    font-size: clamp(1.55rem, 2vw, 2rem);
+    font-family: var(--font-source-sans);
+    line-height: 1.5;
+}
+.individualBlogSection{
+    margin-top: 10dvh;
+}
+.img{
+    display: block;
+    margin: auto;
+    width: min(60rem, 100%);
+    height: auto;
+    margin-top: 5dvh;
+}
+.main .hP{
+    font-size: clamp(1.7rem, 2.2vw, 2.2rem);
+    font-family: var(--font-dm-sans);
+    font-weight: 550;
+}
+.main table, .main th, .main td{
+    border: 0.1rem solid #0B0B0B;
+    border-collapse: collapse;
+    padding: min(2rem, 3%) min(4rem, 5%);
+    font-size: clamp(1.4rem, 2vw, 1.9rem);
+    hyphens: auto;
+    hyphenate-character: "-";
+    overflow-wrap: break-word;
+}
+.main tr:nth-child(even), .main thead{
+    background: #F5F5F5;
+}
+.main th, .main caption{
+    font-family: var(--font-dm-sans);
+}
+.main td{
+    font-family: var(--font-source-sans);
+}
+.main table{
+    width: 100%;
+    table-layout: fixed;
+}
+
+@media (max-width: 992px) {
+    .main{
+        padding: 10%;
+    }
+}
+@media (max-width: 768px) {
+    .main{
+        padding: 5%;
+    }
+}

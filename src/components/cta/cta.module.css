@@ -1,0 +1,82 @@
+
+.contactSection {
+    padding: min(6rem, 7%);
+    background: linear-gradient(180deg, #404040 0%, #131313 82.69%);
+    position: relative;
+    min-height: 80vh;
+}
+
+.contactSection h2 {
+    background: linear-gradient(90deg, #A0A0A0 0%, #D6A354 50.17%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    border-bottom: #F5F5F5 solid 0.4rem;
+    margin-bottom: 10vh;
+    padding: 2rem;
+    padding-top: 0;
+    padding-left: 0;
+    font-size: clamp(3.2rem, 3.5vw, 4.3rem);
+}
+
+.contactSection .button {
+    background-color: transparent;
+    font-size: clamp(2.9rem, 3.5vw, 4.8rem);
+    position: absolute;
+    right: min(10rem, 10%);
+    display: inline-block;
+    font-family: var(--font-dm-sans);
+    color: #F5F5F5;
+    font-weight: 600;
+    z-index: 20;
+}
+
+.contactSection .button:hover {
+    color: #A0A0A0;
+}
+
+.contactSection h3 {
+    font-size: clamp(2.1rem, 3vw, 2.6rem);
+    color: #F5F5F5;
+    padding-top: 15dvh;
+    padding-bottom: 2vh;
+    font-weight: 500;
+    opacity: 95%;
+    font-family: var(--font-dm-sans);
+}
+
+.contactSection ul {
+    display: flex;
+    gap: min(0.6rem, 2%);
+}
+.contactSection a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactSection a img {
+    width: 3rem;
+    height: auto;
+    opacity: 90%;
+    margin: 0 0.2rem;
+}
+
+@media (max-width: 768px) {
+    
+    .contactSection{
+        text-align: center;
+    }
+    .contactSection .button{
+        position: static;
+    }
+    .contactSection h3{
+        padding-top: 10dvh;
+    }
+    .contactSection .img{
+        display:none;
+    }
+    .contactSection ul{
+        justify-content: center;
+    }
+}
