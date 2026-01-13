@@ -40,9 +40,9 @@ const Home = () => {
         <About />
         <hr className="hidden" />
         <Service />
-        <motion.hr {...scaleRight}/>
+        <motion.hr {...scaleRight} transition={{ duration: 0.6, type: "tween", ease: "easeIn"}}/>
         <Portfolio />
-        <motion.hr {...scaleRight}/>
+        <motion.hr {...scaleRight} transition={{ duration: 0.6, type: "tween", ease: "easeIn"}}/>
         <Package />
         <Cta />
       </main>
