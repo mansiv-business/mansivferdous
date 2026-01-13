@@ -17,7 +17,7 @@
     padding: 2rem;
     padding-top: 0;
     padding-left: 0;
-    font-size: clamp(3.2rem, 3.5vw, 4.3rem);
+    font-size: clamp(2.7rem, 3.5vw, 4.3rem);
 }
 
 .contactSection .button {
@@ -66,6 +66,7 @@
     
     .contactSection{
         text-align: center;
+        min-height: 65vh;
     }
     .contactSection .button{
         position: static;
