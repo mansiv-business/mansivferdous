@@ -1,5 +1,6 @@
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Metadata } from "next"
+import * as motion from "motion/react-client"
 
 import Footer from '@/components/footer/footer'
 import Header from '@/components/header/header'
@@ -9,6 +10,7 @@ import Service from '@/components/service/service'
 import Portfolio from '@/components/portfolio/portfolio'
 import Package from '@/components/package/package'
 import Cta from '@/components/cta/cta'
+import { scaleRight } from "@/lib/animation"
 
 export const metadata: Metadata = {
   
@@ -34,13 +36,13 @@ const Home = () => {
       <div className="designed-hr"></div>
       <main>
         <Hero />
-        <hr className="hidden" />
+        <hr className="hidden"/>
         <About />
         <hr className="hidden" />
         <Service />
-        <hr />
+        <motion.hr {...scaleRight}/>
         <Portfolio />
-        <hr />
+        <motion.hr {...scaleRight}/>
         <Package />
         <Cta />
       </main>
