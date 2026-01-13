@@ -15,7 +15,7 @@ const About = () => {
           clean and interactive websites that bring client clarity.</p>
       </div>
 
-      <motion.div className="div-hr" {...scaleRight}></motion.div>
+      <motion.div className="div-hr" {...scaleRight} transition={{ duration: 0.6, type: "tween", ease: "easeIn"}}></motion.div>
 
     </section>
   )
