@@ -10,3 +10,9 @@ export const show = {
     exit:{ y: 30},
     transition: { duration: 0.2}
 }
+
+export const scaleRight = {
+    initial:{ scaleX : 0, originX : "left"},
+    whileInView:{ scaleX: 1},
+    transition: { duration: 1,}
+}
