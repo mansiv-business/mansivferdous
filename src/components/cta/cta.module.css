@@ -3,7 +3,7 @@
     padding: min(6rem, 7%);
     background: linear-gradient(180deg, #404040 0%, #131313 82.69%);
     position: relative;
-    min-height: 80vh;
+    min-height: 80dvh;
 }
 
 .contactSection h2 {
@@ -66,7 +66,7 @@
     
     .contactSection{
         text-align: center;
-        min-height: 65vh;
+        min-height: 65dvh;
     }
     .contactSection .button{
         position: static;
@@ -81,3 +81,4 @@
         justify-content: center;
     }
 }
+
