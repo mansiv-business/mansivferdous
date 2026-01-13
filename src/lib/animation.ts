@@ -1,3 +1,4 @@
+
 export const comeUp = {
     initial: { y: 20 },
     whileInView: { y: 0 },
@@ -14,5 +15,4 @@ export const show = {
 export const scaleRight = {
     initial:{ scaleX : 0, originX : "left"},
     whileInView:{ scaleX: 1},
-    transition: { duration: 1,}
 }
