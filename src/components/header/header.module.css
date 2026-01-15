@@ -1,7 +1,5 @@
 .header {
     padding: 2rem min(6rem, 7%);
-    height: 10dvh;
-    height: 10vh;
 }
 
 .navBar a,
@@ -93,3 +91,4 @@
         display: none;
     }
 }
+
