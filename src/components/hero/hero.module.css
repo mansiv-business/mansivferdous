@@ -4,7 +4,6 @@
 
 .heroSection {
     padding: min(6rem, 7%);
-    /* position: relative; */
 }
 
 .heroImg {
@@ -24,13 +23,13 @@
 }
 
 .heroSection > button {
-    padding: min(1rem, 2%);
-    width: min(25rem, 40%);
+    padding: 0.5em;
+    width: min(25rem, 35%);
     margin-top: 2rem;
     border: none;
     border-radius: 1rem;
     background: linear-gradient(90deg, #A0A0A0 0%, #D6A354 100%);
-    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-size: clamp(1.4rem, 2vw, 2rem);
     font-weight: 600;
     color: #0B0B0B;
 }
@@ -47,5 +46,6 @@
     }
     .heroSection button{
         color: rgba(11, 11, 11, 0.9);
+        font-weight: 500;
     }
 }
