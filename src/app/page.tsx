@@ -11,6 +11,7 @@ import Portfolio from '@/components/portfolio/portfolio'
 import Package from '@/components/package/package'
 import Cta from '@/components/cta/cta'
 import { scaleRight } from "@/lib/animation"
+import GsapRegister from "@/lib/gsap-registry"
 
 export const metadata: Metadata = {
   
@@ -35,6 +36,7 @@ const Home = () => {
       <Header />
       <div className="designed-hr"></div>
       <main>
+        <GsapRegister/>
         <Hero />
         <hr className="hidden"/>
         <About />
