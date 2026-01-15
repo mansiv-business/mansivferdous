@@ -15,4 +15,5 @@ export const show = {
 export const scaleRight = {
     initial:{ scaleX : 0, originX : "left"},
     whileInView:{ scaleX: 1},
+    viewport : {once: true }
 }
