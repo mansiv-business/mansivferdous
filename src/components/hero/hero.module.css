@@ -37,7 +37,7 @@
 @media (max-width: 768px) {
 
     .heroSection{
-        min-height: 60dvh;
+        min-height: 65dvh;
         padding-top: 1dvh;
     }
     .heroSection p{
@@ -49,3 +49,4 @@
         font-weight: 500;
     }
 }
+
