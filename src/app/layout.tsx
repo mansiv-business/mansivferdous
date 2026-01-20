@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins, Source_Sans_3, DM_Sans} from "next/font/google";
+import { Analytics } from '@vercel/analytics/next';
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -39,7 +40,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${sourceSans3.variable} ${poppins.variable} ${dmSans.variable}`}>
-        {children}
+          {children}
+          <Analytics />
       </body>
     </html>
   );
