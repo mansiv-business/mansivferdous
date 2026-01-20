@@ -1,8 +1,16 @@
 .main{
     padding: min(25rem, 20%);
     padding-top: 15dvh;
+    color: #0B0B0B;
 }
-.main header{
+.main a{
+    color: #0B0B0B;
+    text-decoration: underline;
+}
+.main strong{
+    font-weight: 550;
+}
+.main > article > header{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,22 +40,43 @@
     font-weight: 600;
     font-size: clamp(1.8rem, 3vw, 2.5rem);
     margin-top: 5dvh;
+    margin-bottom: 2dvh;
 }
 .main h4{
     font-size: clamp(1.6rem, 3vw, 2.2rem);
     font-weight: 550;
     font-family: var(--font-dm-sans);
 }
-.main ul li, .main p{
+.main ul li, .main p, .main dl dd, .main ol li{
     font-family: var(--font-source-sans);
     font-size: clamp(1.45rem, 2vw, 1.9rem);
+}
+.main p{
+    line-height: 1.5;
+}
+.main ol, .main ul{
+    line-height: 1.65;
+}
+.main dl dt{
+    font-size: clamp(1.6rem, 2vw, 2.2rem);
+    font-family: var(--font-dm-sans);
+    font-weight: 550;
+    margin-top: 4dvh;
+    margin-bottom: 1dvh;
 }
 .main ul li{
     list-style-type: disc;
     list-style-position: inside;
 }
-.main p, .main ul{
-    margin-top: 4dvh;
+.main ol li{
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+.main dl{
+    margin-bottom: 3dvh;
+}
+.main p, .main ul, .main ol{
+    margin-top: 2dvh;
     margin-bottom: 4dvh;
 }
 .main .headerP{
