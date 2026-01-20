@@ -1,11 +1,29 @@
 import Image from "next/image"
+import { Metadata } from 'next'
 
 import styles from "../website-pricing-breakdown-2026/individualBlog.module.css"
 import Header from "@/components/header/header"
 import Footer from "@/components/footer/footer"
 
 
+export const metadata: Metadata = {
+  title: "Website Design Process: From Discovery to Launch. A Transparent look at Mansiv Al Ferdous's methodology",
+  description: "Learn the complete website design process from discovery to launch. A transparent look at how I build conversion-focused sites with Next.js in 2026.",
 
+  twitter: {
+    card: "summary_large_image",
+    title: "Website Design Process: From Discovery to Launch.",
+    description: "Learn the complete website design process from discovery to launch. A transparent look at how I build conversion-focused sites in 2026.",
+    creator: "@mansivferdous"
+  },
+  openGraph: {
+    title: "Website Design Process: From Discovery to Launch.",
+    description: "Learn the complete website design process from discovery to launch. A transparent look at how I build conversion-focused sites in 2026.",
+    url: "https://mansivferdous.com",
+    siteName: "Mansiv Al Ferdous' Portfolio",
+    type: "website",
+  },
+}
 const Page = () => {
     return (
         <>
