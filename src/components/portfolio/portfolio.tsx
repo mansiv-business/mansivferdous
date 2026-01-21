@@ -28,7 +28,7 @@ const Portfolio = () => {
             <p className="text">Available for all types of device users.</p>
       </div>
       <div className={styles.live}>
-        <h4>View Live:</h4>
+        <p>View Live:</p>
         <a href="http://nextjs-mockup.vercel.app" target="_blank" rel="noopener noreferrer">nextjs-mockup.vercel.app</a>
       </div>
     </section>
@@ -36,3 +36,4 @@ const Portfolio = () => {
 }
 
 export default Portfolio
+
