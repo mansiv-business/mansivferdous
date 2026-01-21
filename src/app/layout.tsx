@@ -20,6 +20,7 @@ const sourceSans3 = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://mansivferdous.com"),
   title: "Mansiv Al Ferdous | Web Designer & Next.js Developer",
   description: "Expert Web Designer specializing in Next.js & React. From high-performance landing pages to full-scale business sites. Clean code, SEO-optimized & scalable.",
   authors: [
