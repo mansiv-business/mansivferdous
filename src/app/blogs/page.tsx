@@ -34,7 +34,7 @@ const Page = () => {
               <Image src="/images/blog2-logo.svg" height={200} width={376} alt="" className={styles.img} />
               <h3>Website Design Process: From Discovery to Launch. A transparent look at our methodology.</h3>
               <p>Building a successful website takes 1-16 weeks depending on complexity. The process involves four phases: Discovery & Strategy, Design & Prototyping, Development & Integration, and Launch & Optimization ...</p>
-              <Link href="/blogs/website-pricing-breakdown-2026" className={styles.button}>View Blog <img src="images/arrow.svg" /></Link>
+              <Link href="/blogs/website-design-process" className={styles.button}>View Blog <img src="images/arrow.svg" /></Link>
             </article>
           </div>
         </section>
@@ -45,4 +45,5 @@ const Page = () => {
 }
 
 export default Page
+
 
