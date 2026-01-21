@@ -46,12 +46,17 @@
 
 .live{
     flex-direction: column;
+    gap: 3dvh;
 }
 
 .live a {
     color: #0B0B0B;
-    font-size: clamp(1.7rem, 2.5vw, 2.2rem);
+    font-size: clamp(1.8rem, 2.5vw, 2.2rem);
     font-family: var(--font-source-sans);
+}
+.live p{
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
+    font-family: var(--font-dm-sans);
 }
 
 @media (max-width: 768px) {
