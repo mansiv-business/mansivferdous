@@ -19,6 +19,7 @@
     border-radius: 50%;
     width: 3.5rem;
     height: auto;
+    position: absolute;
 }
 .main span{
     font-size: clamp(1.45rem, 2vw, 1.9rem);
@@ -134,3 +135,4 @@
         padding: 5%;
     }
 }
+
