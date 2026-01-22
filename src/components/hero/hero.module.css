@@ -3,7 +3,7 @@
 }
 
 .heroSection {
-    padding: min(6rem, 7%);
+    padding: min(6rem, 5%);
 }
 
 .heroImg {
@@ -15,11 +15,12 @@
 
 .heroSection p {
     font-family: var(--font-dm-sans);
-    font-size: clamp(1.4rem, 2.5vw, 2.1rem);
+    font-size: clamp(1.55rem, 2.5vw, 2.1rem);
     margin-top: 1.5rem;
     line-height: 1.5;
     font-weight: 500;
     color: #0B0B0B;
+    opacity: 0.9;
 }
 
 .heroSection > button {
@@ -41,7 +42,7 @@
         padding-top: 1dvh;
     }
     .heroSection p{
-        font-weight: 400;
+        font-weight: 500;
         line-height: 1.5;
     }
     .heroSection button{
@@ -49,4 +50,3 @@
         font-weight: 500;
     }
 }
-
