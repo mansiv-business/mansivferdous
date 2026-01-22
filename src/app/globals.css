@@ -39,7 +39,7 @@ body{
 }
 
 h1 {
-    font-size: clamp(2rem, 5vw, 7rem);
+    font-size: clamp(2.5rem, 5vw, 7rem);
     color: #212121;
     font-family: var(--font-poppins);
     font-weight: 700;
@@ -113,7 +113,7 @@ hr.show,
 @media (max-width: 768px) {
     h1{
         font-weight: 600;
-        line-height: 1.65;
+        line-height: 1.6;
         margin-top: 6dvh;
     }
     h3{
