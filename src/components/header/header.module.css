@@ -1,5 +1,5 @@
 .header {
-    padding: 2rem min(6rem, 7%);
+    padding: 1.5rem min(6rem, 5%);
 }
 
 .navBar a,
@@ -91,4 +91,5 @@
         display: none;
     }
 }
+
 
