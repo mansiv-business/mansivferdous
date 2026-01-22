@@ -1,5 +1,5 @@
 .footer{
-    padding: min(2rem, 4%) min(6rem, 7%);
+    padding: min(2rem, 4%) min(6rem, 5%);
     background-color: #131313;
 
     display: flex;
@@ -39,3 +39,4 @@
         justify-content: center;
     }
 }
+
