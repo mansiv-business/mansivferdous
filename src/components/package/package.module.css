@@ -1,6 +1,6 @@
 
 .packageSection {
-    padding: min(6rem, 7%);
+    padding: min(6rem, 5%);
     background-color: white;
 }
 
@@ -90,3 +90,4 @@
         font-weight: 400;
     }
 }
+
