@@ -25,7 +25,7 @@ export default function GsapRegister() {
           opacity: 0.5,
           y: 110,
           ease: "power3.out",
-          delay: 1.1,
+          delay: 0.85,
           stagger: 0.1,
           duration: 0.5,
           scrollTrigger: {
@@ -48,10 +48,10 @@ export default function GsapRegister() {
 
         gsap.from(split.words, {
           delay: 0.1,
-          opacity: 0.5,
+          opacity: 0.1,
           y: 110,
           stagger: 0.07,
-          duration: 1,
+          duration: 0.8,
           ease: "power3.out",
           scrollTrigger: {
             trigger: heading,
