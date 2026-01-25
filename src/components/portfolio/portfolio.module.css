@@ -4,8 +4,8 @@
     display: flex;
     flex-direction: column;
     gap: 10dvh;
-    background-color: white;
-    min-height: 100dvh;
+    background-color: #f5f5f5;
+    min-height: 90dvh;
 }
 
 .portfolioSection h2 {
@@ -14,16 +14,12 @@
     position: relative;
 }
 
-.portfolioSection div {
+.portfolioSection > div {
     display: flex;
     gap: min(10rem, 10%);
+    align-items: center;
 }
 
-.portfolioSection div{
-    display: flex;
-    align-items: center;
-    min-height: 50dvh;
-}
 
 .portfolioSection .text {
     flex: 1;
@@ -60,9 +56,8 @@
 }
 
 @media (max-width: 768px) {
-    .portfolioSection div {
+    .portfolioSection > div {
         flex-direction: column;
     }
     
 }
-
