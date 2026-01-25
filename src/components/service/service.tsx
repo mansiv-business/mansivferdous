@@ -1,14 +1,11 @@
-import * as motion from "motion/react-client"
-
 import styles from "./service.module.css"
-import { comeUp } from "@/lib/animation"
 
 
 
 const Service = () => {
   return (
      <section className={styles.serviceSection}>
-          <h2><span>What I Provide</span></h2>
+          <h2>What I Provide</h2>
           <div>
             <article>
               <div>
@@ -20,7 +17,7 @@ const Service = () => {
               <h4>With Responsive Design and Organized Content</h4>
             </article>
 
-            <motion.article {...comeUp} transition={{type: "tween", duration: 0.4,}}>
+            <article>
               <div>
                 <h3>Conversion Focused Copywriting</h3>
                 <p>Most designers focus on UI and UX only. But just animations and wonderful layout can’t
@@ -28,18 +25,18 @@ const Service = () => {
                   writings possible that can bring client clarity and satisfaction alongside SEO traffic.</p>
               </div>
               <h4>With Comprehensive and Conversion focused Copywriting.</h4>
-            </motion.article>
+            </article>
 
-            <motion.article {...comeUp} transition={{type: "tween", duration: 0.4,}}>
+            <article>
               <div>
                 <h3>Search Engine Optimization</h3>
                 <p>SEO is no longer limited to google search. That is why I focus on websites that can be
                   recommended by AI ChatBots like ChatGPT as well as in Google’s search results.</p>
               </div>
               <h4>With Structured Data, Proper HTML tags, Sitemap, Optimized images and more.</h4>
-            </motion.article>
+            </article>
 
-            <motion.article {...comeUp} transition={{type: "tween", duration: 0.4,}}>
+            <article>
               <div>
                 <h3>Seamless User Experience</h3>
                 <p>An unoptimized website with heavy animations can make you lose clients. And that is where I
@@ -48,16 +45,16 @@ const Service = () => {
               </div>
               <h4>With Fast User Interface and Excellent User Experience, Deployed on <a
                 href="https://vercel.com/">Vercel</a> or <a href="https://www.netlify.com/">Netlify</a>.</h4>
-            </motion.article>
+            </article>
 
-            <motion.article {...comeUp} transition={{type: "tween", duration: 0.4,}}>
+            <article>
               <div>
                 <h3>Further Support for your website</h3>
                 <p className={styles.serviceDiv5}>Hosting a website might be problematic after buying. And that is why I provide further
                   support for your website after development to keep it up to date with a monthly payment.</p>
               </div>
               <h4>With updated features and optimized SEO.</h4>
-            </motion.article>
+            </article>
           </div>
         </section>
   )
