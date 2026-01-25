@@ -8,9 +8,8 @@
 }
 
 html {
-    font-size: 10px;
+    font-size: 62.5%;
     scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
 
 }
 html, body {
@@ -21,30 +20,22 @@ body{
     overflow-x: hidden;
 }
 
-.hero-section,
-.about-section,
-.portfolio-section,
-.contact-section {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-}
-
-.hero-section {
-    scroll-margin-top: 10vh;
-}
-
-.service-section,
-.package-section {
-    scroll-snap-align: none;
+hr{
+    background-color: #F5F5F5;
 }
 
 h1 {
-    font-size: clamp(2.5rem, 5vw, 7rem);
+    font-size: clamp(2.6rem, 5vw, 7rem);
     color: #212121;
     font-family: var(--font-poppins);
     font-weight: 700;
     line-height: 1.4;
 }
+
+h1 div{
+    will-change: transform;
+}
+
 h2 {
     font-size: clamp(2.5rem, 3.7vw, 4rem);
     font-family: var(--font-poppins);
@@ -92,15 +83,12 @@ hr {
 }
 .split-line {
   overflow: hidden;
+  vertical-align: top;
 }
 .split-word {
   display: inline-block;
   vertical-align: top;
-  overflow: hidden;
-}
-hr.show,
-.div-hr.show {
-    transform: scaleX(1);
+  overflow-y: hidden;
 }
 
 .designed-hr {
@@ -113,7 +101,7 @@ hr.show,
 @media (max-width: 768px) {
     h1{
         font-weight: 600;
-        line-height: 1.6;
+        line-height: 1.7;
         margin-top: 6dvh;
     }
     h3{
