@@ -1,23 +1,25 @@
 
 .contactSection {
     padding: min(6rem, 7%);
-    background: linear-gradient(180deg, #404040 0%, #131313 82.69%);
+    background: linear-gradient(180deg, #303030 0%, #0b0b0b 82.69%);
     position: relative;
     min-height: 80dvh;
 }
 
-.contactSection h2 {
-    background: linear-gradient(90deg, #A0A0A0 0%, #D6A354 50.17%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+.contactSection h2{
     border-bottom: #F5F5F5 solid 0.4rem;
     margin-bottom: 10vh;
     padding: 2rem;
     padding-top: 0;
     padding-left: 0;
     font-size: clamp(2.7rem, 3.5vw, 4.3rem);
+}
+.contactSection h2 div{
+    background: linear-gradient(90deg, #A0A0A0 0%, #D6A354 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .contactSection .button {
@@ -81,4 +83,3 @@
         justify-content: center;
     }
 }
-
