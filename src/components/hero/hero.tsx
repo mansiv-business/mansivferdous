@@ -30,7 +30,7 @@ const Hero = () => {
         opacity: 0,
         scrollTrigger: {
           trigger: "#about",
-          start: "top bottom",
+          start: "top 10%",
           end: "bottom 50%",
           scrub: true,
         },
@@ -60,3 +60,4 @@ const Hero = () => {
 }
 
 export default Hero
+
