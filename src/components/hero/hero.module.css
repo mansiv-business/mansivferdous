@@ -1,22 +1,31 @@
 .heroSection {
     min-height: 100dvh;
-}
-
-.heroSection {
     padding: min(6rem, 5%);
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 100;
+    transform-origin:  top left;
+    box-shadow: 0.1rem 0.1rem 0.5rem #0B0B0B;
+    will-change: transform;
 }
 
 .heroImg {
     width: min(7rem, 10%);
-    border-radius: 50%;
     position: absolute;
+    height: auto;
+    overflow: hidden;
+}
+.heroImg img{
+    width: 100%;
     height: auto;
 }
 
 .heroSection p {
     font-family: var(--font-dm-sans);
-    font-size: clamp(1.55rem, 2.5vw, 2.1rem);
-    margin-top: 1.5rem;
+    font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+    margin-top: 1.5dvh;
     line-height: 1.5;
     font-weight: 500;
     color: #0B0B0B;
@@ -25,28 +34,33 @@
 
 .heroSection > button {
     padding: 0.5em;
-    width: min(25rem, 35%);
-    margin-top: 2rem;
+    width: min(30rem, 40%);
+    margin-top: 5dvh;
     border: none;
     border-radius: 1rem;
     background: linear-gradient(90deg, #A0A0A0 0%, #D6A354 100%);
     font-size: clamp(1.4rem, 2vw, 2rem);
     font-weight: 600;
     color: #0B0B0B;
+
 }
 
 @media (max-width: 768px) {
 
     .heroSection{
-        min-height: 65dvh;
+        min-height: 95dvh;
         padding-top: 1dvh;
     }
     .heroSection p{
         font-weight: 500;
         line-height: 1.5;
+        margin-top: 5dvh;
     }
     .heroSection button{
         color: rgba(11, 11, 11, 0.9);
         font-weight: 500;
+    }
+    .heroSection > button{
+        border-radius: 0.5rem;
     }
 }
