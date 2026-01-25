@@ -4,10 +4,10 @@ import styles from "./cta.module.css"
 const Cta = () => {
   return (
     <section className={styles.contactSection}>
-      <h2><span>Let's Work Together</span></h2>
+      <h2>Lets Work Together</h2>
 
       <div>
-        <a href="https://cal.com/mansiv-business/15min" className={styles.button} target="_blank" rel="noopener noreferrer">Book A Quick Call<Image aria-hidden="true" alt="" src="images/arrow.svg" className={styles.img} height={20} width={20}/></a>
+        <a href="https://cal.com/mansiv-business/15min" className={styles.button} target="_blank" rel="noopener noreferrer">Book A Quick Call &rarr;</a>
 
         <h3>Contact Me Through Social Media:</h3>
         <ul>
