@@ -32,7 +32,7 @@ const Page = () => {
             <main className={styles.main}>
                 <article>
                     <header>
-                        <span>A transparent look at Mansiv Al Ferdous's webdesign process <Image src='/images/portfolio_image double edited.png' alt="author's image" width={50} height={50} /></span>
+                        <span>A transparent look at Mansiv Al Ferdous's webdesign process. <Image src="/images/portfolioImg.png" alt="author's image" width={50} height={50} /></span>
                         <h1>Website Design Process: From Discovery to Launch</h1>
                         <h2 className={styles.headerP}>A transparent look at the methodology behind high-converting digital experiences.</h2>
 
