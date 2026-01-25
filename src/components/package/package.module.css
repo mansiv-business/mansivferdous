@@ -1,7 +1,7 @@
 
 .packageSection {
     padding: min(6rem, 5%);
-    background-color: white;
+    background-color: #f5f5f5;
 }
 
 .packageSection h2 {
@@ -42,23 +42,20 @@
     min-height: 60dvh;
     min-height: 60vh;
     position: sticky;
-
+    background-color: #f5f5f5;
 
 }
 .packageSection article:nth-child(1) {
     z-index: 1;
     top: 0;
-    background-color: white;
 }
 .packageSection article:nth-child(2) {
     z-index: 2;
     top: 17dvh;
-    background-color: white;
 }
 .packageSection article:nth-child(3) {
     z-index: 3;
     top: 34dvh;
-    background-color: white;
     border-bottom: #0B0B0B solid 0.2rem;
     padding-bottom: 2vh;
     margin-bottom: 2vh;
@@ -90,4 +87,3 @@
         font-weight: 400;
     }
 }
-
