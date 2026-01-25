@@ -1,7 +1,6 @@
 import * as motion from "motion/react-client"
 
 import styles from "./package.module.css"
-import { comeUp } from "@/lib/animation"
 
 
 const Package = () => {
@@ -12,7 +11,7 @@ const Package = () => {
         changes the price.</p>
 
       <div className={styles.packages}>
-        <motion.article {...comeUp} transition={{type: "tween", duration: 0.4,}}>
+        <article>
           <h3><img src="images/rocket-icon.svg" alt="" aria-hidden="true" width="45px" height="45px"/> Landing Pages</h3>
 
           <div className={styles.packageDesc}>
@@ -26,9 +25,9 @@ const Package = () => {
             <p>A landing page is always lighter than a regular website. It loads quick, explains quick -
               resulting to quick client clarity and quick conversions.</p>
           </div>
-        </motion.article>
+        </article>
 
-        <motion.article {...comeUp} transition={{type: "tween", duration: 0.4,}}>
+        <article>
           <h3><img src="images/chart-increasing-icon.svg" alt="" aria-hidden="true" width="45px" height="45px"/> Promotional Websites</h3>
 
           <div className={styles.packageDesc}>
@@ -42,9 +41,9 @@ const Package = () => {
             <p>A promotional site always has one simple goal and that is to bring general interest towards
               your agency and potentially boosting your sales.</p>
           </div>
-        </motion.article>
+        </article>
 
-        <motion.article {...comeUp} transition={{type: "tween", duration: 0.4,}}>
+        <article>
           <h3><img src="images/globe-icon.svg" alt="" aria-hidden="true" width="45px" height="45px"/> Business Websites</h3>
 
           <div className={styles.packageDesc}>
@@ -58,7 +57,7 @@ const Package = () => {
             <p>Sometimes you might want to establish your business online from the root. And that is where I
               come to make you a full scale business website for your agency.</p>
           </div>
-        </motion.article>
+        </article>
 
       </div>
       <p className={styles.custom}>Custom Order available upon request.</p>
