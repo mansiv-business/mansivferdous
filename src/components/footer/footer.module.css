@@ -1,6 +1,6 @@
 .footer{
     padding: min(2rem, 4%) min(6rem, 5%);
-    background-color: #131313;
+    background-color: #0b0b0b;
 
     display: flex;
     justify-content: space-between;
@@ -39,4 +39,5 @@
         justify-content: center;
     }
 }
+
 
