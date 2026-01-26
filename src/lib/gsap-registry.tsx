@@ -22,10 +22,10 @@ export default function GsapRegister() {
         });
 
         gsap.from(split.lines, {
-          opacity: 0.5,
+          opacity: 0.2,
           y: 110,
           ease: "power1.slow",
-          delay: 0.85,
+          delay: 0.8,
           stagger: 0.08,
           duration: 1,
           scrollTrigger: {
