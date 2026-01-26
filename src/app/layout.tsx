@@ -1,22 +1,18 @@
 import type { Metadata } from "next";
-import { Poppins, Source_Sans_3, DM_Sans} from "next/font/google";
+import {DM_Sans} from "next/font/google";
+import localFont from "next/font/local"
 import { Analytics } from '@vercel/analytics/next';
 import "./globals.css";
+import InstagramFontFix from "@/components/instaBrowser";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
 });
+const satoshi = localFont({
+  src: './fonts/Satoshi-Variable.woff2',
+  variable: "--font-satoshi",
 
-const poppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["300","400","500", "600", "700"]
-});
-
-const sourceSans3 = Source_Sans_3({
-  variable: "--font-source-sans",
-  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -40,7 +36,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${sourceSans3.variable} ${poppins.variable} ${dmSans.variable}`}>
+      <body className={`${dmSans.variable} ${satoshi.variable}`}>
+          <InstagramFontFix/>
           {children}
           <Analytics />
       </body>
