@@ -25,13 +25,13 @@
 }
 
 .aboutSection p {
-    font-family: var(--font-source-sans);
-    font-size: clamp(1.6rem, 2.2vw, 2.1rem);
-    line-height: 1.5;
+    font-family: var(--font-dm-sans);
+    font-size: clamp(1.6rem, 2.2vw, 2rem);
+    line-height: 1.6;
     flex: 1.5;
-    font-weight: 400;
+    font-weight: 380;
     color: #0b0b0b;
-    opacity: 95%;
+    opacity: 0.97;
     word-spacing: 0.1rem;
     letter-spacing: 0.05rem;
     margin-top: 3dvh;
@@ -39,8 +39,8 @@
 
 .aboutSection h2 {
     flex: 1.1;
-    font-weight: 500;
-    font-size: clamp(2.2rem, 2.8vw, 3.6rem);
+    font-weight: 550;
+    font-size: clamp(2.6rem, 2.8vw, 3.6rem);
     color: #0b0b0b;
     border-right: 0.4rem solid #F5F5F5;
     padding-right: 3%;
@@ -58,7 +58,7 @@
 
     .aboutDiv p {
         line-height: 1.5;
-        margin-top: 5dvh;
+        margin-top: 3dvh;
     }
     .imageDiv{
         position: static;
