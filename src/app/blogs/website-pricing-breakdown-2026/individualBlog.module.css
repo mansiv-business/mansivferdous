@@ -46,7 +46,7 @@
 .main h4{
     font-size: clamp(1.6rem, 3vw, 2.2rem);
     font-weight: 550;
-    font-family: var(--font-satoshi-sans);
+    font-family: var(--font-satoshi);
 }
 .main ul li, .main p, .main dl dd, .main ol li{
     font-family: var(--font-dm-sans);
@@ -60,7 +60,7 @@
 }
 .main dl dt{
     font-size: clamp(1.6rem, 2vw, 2.2rem);
-    font-family: var(--font-satoshi-sans);
+    font-family: var(--font-satoshi);
     font-weight: 550;
     margin-top: 4dvh;
     margin-bottom: 1dvh;
@@ -99,7 +99,7 @@
 }
 .main .hP{
     font-size: clamp(1.7rem, 2.2vw, 2.2rem);
-    font-family: var(--font-satoshi-sans);
+    font-family: var(--font-satoshi);
     font-weight: 550;
 }
 .main table, .main th, .main td{
@@ -115,7 +115,7 @@
     background: #F5F5F5;
 }
 .main th, .main caption{
-    font-family: var(--font-satoshi-sans);
+    font-family: var(--font-satoshi);
 }
 .main td{
     font-family: var(--font-dm-sans);
