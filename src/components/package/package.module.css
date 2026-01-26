@@ -28,7 +28,7 @@
 
 .packageSection>p {
     font-size: clamp(1.7rem, 2.5vw, 2.2rem);
-    font-family: var(--font-dm-sans);
+    font-family: var(--font-satoshi);
     font-weight: 600;
 }
 
@@ -61,7 +61,7 @@
     margin-bottom: 2vh;
 }
 .packageSection article>.packageDesc>P {
-    font-family: var(--font-source-sans);
+    font-family: var(--font-dm-sans);
     flex: 1;
     line-height: 1.7;
     font-weight: 400;
