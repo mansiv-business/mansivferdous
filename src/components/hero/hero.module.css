@@ -48,7 +48,7 @@
 @media (max-width: 768px) {
 
     .heroSection{
-        min-height: 95dvh;
+        min-height: 100dvh;
         padding-top: 1dvh;
     }
     .heroSection p{
@@ -64,3 +64,4 @@
         border-radius: 0.5rem;
     }
 }
+
