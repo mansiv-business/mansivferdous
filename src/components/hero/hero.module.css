@@ -10,10 +10,6 @@
     box-shadow: 0.1rem 0.1rem 0.5rem #0B0B0B;
     will-change: transform;
 }
-.heroSection h1{
-    border-bottom: 0.3rem solid #0b0b0b;
-    padding-bottom: 3rem;
-}
 .heroImg {
     width: min(7rem, 10%);
     position: absolute;
@@ -27,17 +23,18 @@
 
 .heroSection p {
     font-family: var(--font-dm-sans);
-    font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+    font-size: clamp(1.75rem, 2.5vw, 2.3rem);
     margin-top: 1.5dvh;
-    line-height: 1.5;
+    line-height: 1.55;
     font-weight: 500;
     color: #0B0B0B;
-    opacity: 0.9;
+    opacity: 0.95;
+    width: 90%;
 }
 
 .heroSection > button {
     padding: 0.5em;
-    width: min(30rem, 40%);
+    width: min(40rem, 100%);
     margin-top: 5dvh;
     border: none;
     border-radius: 1rem;
@@ -56,8 +53,8 @@
     }
     .heroSection p{
         font-weight: 500;
-        line-height: 1.5;
         margin-top: 5dvh;
+        width: 100%;
     }
     .heroSection button{
         color: rgba(11, 11, 11, 0.9);
