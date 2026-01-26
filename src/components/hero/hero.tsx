@@ -39,7 +39,7 @@ const Hero = () => {
       xPercent: -110,
       scrollTrigger: {
         trigger: hero,
-        start: "top 90%",
+        start: "top 85%",
         once: true,
       },
       delay: 1.3,
