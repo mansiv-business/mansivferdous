@@ -24,18 +24,17 @@ export default function GsapRegister() {
         gsap.from(split.lines, {
           opacity: 0.5,
           y: 110,
-          ease: "power3.out",
+          ease: "power1.slow",
           delay: 0.85,
-          stagger: 0.1,
-          duration: 0.5,
+          stagger: 0.08,
+          duration: 1,
           scrollTrigger: {
             trigger: paragraph,
             start: "top 90%",
-            end: "bottom 0%",
-            onLeave: () => {
-            split.revert();
-           }
-          }
+            end: "bottom 0%", 
+           },
+          onComplete: () => split.revert(),
+
         });
 
       })
@@ -52,7 +51,7 @@ export default function GsapRegister() {
           y: 110,
           stagger: 0.07,
           duration: 0.8,
-          ease: "power3.out",
+          ease: "power1.slow",
           scrollTrigger: {
             trigger: heading,
             start: "top 90%",
