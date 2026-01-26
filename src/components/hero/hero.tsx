@@ -30,7 +30,7 @@ const Hero = () => {
         opacity: 0,
         scrollTrigger: {
           trigger: "#about",
-          start: "top 90%",
+          start: "top bottom",
           end: "bottom 50%",
           scrub: true,
         },
@@ -42,23 +42,20 @@ const Hero = () => {
         start: "top 90%",
         once: true,
       },
-      delay: 1.2,
+      delay: 1.3,
       duration: 0.9,
-      ease: "power1.slow",
+      ease: "power1.out",
     })
   }, [])
 
 
   return (
     <section ref={heroRef} className={styles.heroSection}>
-      <h1>Get a Website That Builds social Authority and Conversion by Mansiv Al Ferdous <span className={styles.heroImg} aria-hidden="true" ><div ref={imgRef}><Image src="/images/portfolioImg.png" alt="" width={300} height={300} role="presentation" /></div></span></h1>
-      <p>I build websites that doesn’t just showcase your work in a way that attracts clients, but I also focus on
-        copywriting and organized content so your business can by found at the top of most search engines.</p>
+      <h1>Building Next.JS Websites That Drive real growth through Traffic and Conversions<span className={styles.heroImg} aria-hidden="true" ><div ref={imgRef}><Image src="/images/portfolioImg.png" alt="" width={300} height={300} role="presentation" /></div></span></h1>
+      <p>I build UI/UX focused sites that are able to generate real traffic and revenue through conversions with Next.JS, Structured data and Semantic HTML.</p>
       <HeroCta />
     </section>
   )
 }
 
 export default Hero
-
-
