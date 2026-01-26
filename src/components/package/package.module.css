@@ -18,7 +18,7 @@
 }
 
 .packageSection p {
-    font-size: clamp(1.65rem, 2.5vw, 2.0rem);
+    font-size: clamp(1.7rem, 2.5vw, 2rem);
 }
 
 .packageSection .custom {
@@ -27,9 +27,10 @@
 }
 
 .packageSection>p {
-    font-size: clamp(1.7rem, 2.5vw, 2.2rem);
+    font-size: clamp(1.75rem, 2.5vw, 2.2rem);
     font-family: var(--font-satoshi);
     font-weight: 600;
+    line-height: 1.5;
 }
 
 .packages {
@@ -82,8 +83,5 @@
     .packageDesc{
         flex-direction: column;
         gap: 5dvh;
-    }
-    .packageSection > p{
-        font-weight: 400;
     }
 }
