@@ -53,7 +53,7 @@
     }
     .heroSection p{
         font-weight: 500;
-        margin-top: 5dvh;
+        margin-top: 4dvh;
         width: 100%;
     }
     .heroSection button{
@@ -64,4 +64,5 @@
         border-radius: 0.5rem;
     }
 }
+
 
