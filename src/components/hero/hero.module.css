@@ -10,7 +10,10 @@
     box-shadow: 0.1rem 0.1rem 0.5rem #0B0B0B;
     will-change: transform;
 }
-
+.heroSection h1{
+    border-bottom: 0.3rem solid #0b0b0b;
+    padding-bottom: 3rem;
+}
 .heroImg {
     width: min(7rem, 10%);
     position: absolute;
