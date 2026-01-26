@@ -13,6 +13,12 @@
     padding-top: 0;
     padding-left: 0;
     font-size: clamp(2.7rem, 3.5vw, 4.3rem);
+
+    background: linear-gradient(90deg, #A0A0A0 0%, #D6A354 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 .contactSection h2 div{
     background: linear-gradient(90deg, #A0A0A0 0%, #D6A354 100%);
