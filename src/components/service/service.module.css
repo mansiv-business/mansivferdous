@@ -97,8 +97,13 @@
     .serviceSection > div{
         height: 400dvh;
     }
+    .serviceSection h2{
+        padding: 3rem;
+    }
     .serviceSection article{
         flex-direction: column;
+        top: 16dvh;
+        padding-top: 6dvh;
     }
     .serviceSection article h4 {
         border-left: none;
