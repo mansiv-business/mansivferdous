@@ -11,7 +11,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { SplitText } from 'gsap/SplitText';
 
 if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger, SplitText);
 }
 
 const Hero = () => {
@@ -19,7 +19,7 @@ const Hero = () => {
   const heroRef = useRef<HTMLElement>(null)
   const imgRef = useRef<HTMLImageElement>(null)
   const h1Ref = useRef<HTMLHeadingElement>(null)
-  const pRef = useRef<HTMLImageElement>(null)
+  const pRef = useRef<HTMLParagraphElement>(null)
 
   useGSAP(() => {
 
@@ -83,3 +83,4 @@ const Hero = () => {
 }
 
 export default Hero
+
