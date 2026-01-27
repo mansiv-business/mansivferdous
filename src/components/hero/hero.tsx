@@ -26,48 +26,37 @@ const Hero = () => {
     const hero = heroRef.current
     const Img = imgRef.current
 
-    const splitHeading = new SplitText( h1Ref.current, {
-          type: "words",
-          linesClass: "split-word",
-          mask : "words",
-        });
+    const splitHeading = new SplitText(h1Ref.current, {
+      type: "words",
+      linesClass: "split-word",
+      mask: "words",
+    });
 
-    const splitPara = new SplitText( pRef.current, {
-          type: "lines",
-          linesClass: "split-word",
-          mask : "lines",
-        });
+    const splitPara = new SplitText(pRef.current, {
+      type: "lines",
+      linesClass: "split-word",
+      mask: "lines",
+    });
 
-    gsap.from(splitHeading.words, { 
-      y: 300, 
-      opacity: 0.1, 
-      rotation: 8,
-      duration: 0.8,
-      stagger: 0.06,
-      ease: "sine.out",
+    const tl = gsap.timeline({
       scrollTrigger: {
         trigger: hero,
-        start: "top 95%",
+        start: "top 90%",
         once: true,
       },
-      onComplete: () => splitPara.revert(),
-    })
-    gsap.from(splitPara.lines, { 
-      delay: 0.9,
-      y: 110, 
-      opacity: 0.1,
-      rotation: 8, 
-      scaleY: 0.2,
-      stagger: 0.1,
-      duration: 0.7,
-      ease: "sine.out",
-      scrollTrigger: {
-        trigger: hero,
-        start: "top 95%",
-        once: true,
+      defaults: {
+        ease: "sine.out",
+        stagger: 0.07,
       },
-      onComplete: () => splitPara.revert(),
-    })
+    });
+
+    tl.from(splitHeading.words, { y: 1500, opacity: 0.1, rotation: 20, duration: 1.7, })
+      .from(splitPara.lines, { y: 110, opacity: 0.1, rotation: 7, scaleY: 0.2, })
+      .from(Img, {
+        xPercent: -110,
+        duration: 0.8,
+      })
+
     gsap.fromTo(hero, {
       scale: 1,
     },
@@ -81,17 +70,6 @@ const Hero = () => {
           scrub: true,
         },
       })
-    gsap.from(Img, {
-      xPercent: -110,
-      scrollTrigger: {
-        trigger: hero,
-        start: "top 85%",
-        once: true,
-      },
-      delay: 1.5,
-      duration: 0.9,
-      ease: "power1.out",
-    })
   }, [])
 
 
