@@ -27,13 +27,13 @@
 .aboutSection p {
     font-family: var(--font-dm-sans);
     font-size: clamp(1.6rem, 2.2vw, 2rem);
-    line-height: 1.6;
+    line-height: 1.65;
     flex: 1.5;
     font-weight: 380;
     color: #0b0b0b;
     opacity: 0.97;
-    word-spacing: 0.1rem;
-    letter-spacing: 0.05rem;
+    word-spacing: 0.08em;
+    letter-spacing: 0.005em;
     margin-top: 3dvh;
 }
 
@@ -45,6 +45,8 @@
     border-right: 0.4rem solid #F5F5F5;
     padding-right: 3%;
     z-index: 10;
+    word-spacing: 0.02em;
+    letter-spacing: 0.003em;
 }
 
 .aboutSection .div-hr {
@@ -57,8 +59,7 @@
     }
 
     .aboutDiv p {
-        line-height: 1.5;
-        margin-top: 3dvh;
+        line-height: 1.6;
     }
     .imageDiv{
         position: static;
