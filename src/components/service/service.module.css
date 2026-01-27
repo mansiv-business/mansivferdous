@@ -95,7 +95,7 @@
 @media (max-width: 768px) {
 
     .serviceSection > div{
-        height: 380dvh;
+        height: 400dvh;
     }
     .serviceSection article{
         flex-direction: column;
