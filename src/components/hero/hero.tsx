@@ -70,6 +70,11 @@ const Hero = () => {
           scrub: true,
         },
       })
+
+      return () => {
+        splitHeading.revert();
+        splitPara.revert();
+    };
   }, [])
 
 
