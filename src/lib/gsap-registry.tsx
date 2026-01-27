@@ -12,8 +12,8 @@ export default function GsapRegister() {
     const mm = gsap.matchMedia();
 
     mm.add("(prefers-reduced-motion: no-preference)", () => {
-      const headings = gsap.utils.toArray("h1, h2, h3");
-      const paragraphs = gsap.utils.toArray("p, h4");
+      const headings = gsap.utils.toArray("h2, h3");
+      const paragraphs = gsap.utils.toArray(".p");
       paragraphs.forEach((paragraph: any) => {
         const split = new SplitText(paragraph, {
           type: "lines",
@@ -22,16 +22,18 @@ export default function GsapRegister() {
         });
 
         gsap.from(split.lines, {
+          rotation : 10,
+          scaleY: 0.1,
           opacity: 0.2,
-          y: 110,
-          ease: "power1.slow",
-          delay: 0.4,
+          y: 130,
+          ease: "sine.out",
+          delay: 0.1,
           stagger: 0.07,
-          duration: 1,
+          duration: 1.3,
           scrollTrigger: {
             trigger: paragraph,
-            start: "top 90%",
-            end: "bottom 0%", 
+            start: "top 95%",
+            once: true,
            },
           onComplete: () => split.revert(),
 
@@ -46,20 +48,18 @@ export default function GsapRegister() {
         });
 
         gsap.from(split.words, {
-          delay: 0.1,
+          delay: 0.08,
           opacity: 0.1,
           y: 150,
           stagger: 0.07,
-          duration: 0.7,
-          ease: "power1.slow",
+          duration: 1,
+          ease: "sine.out",
           scrollTrigger: {
             trigger: heading,
             start: "top 90%",
-            end: "bottom 0%",
-            onLeave: () => {
-            split.revert();
-           },
-          }
+            once: true,
+          },
+          onComplete: () => split.revert(),
         });
       });
     });
