@@ -6,7 +6,7 @@ import styles from "./package.module.css"
 const Package = () => {
   return (
     <section className={styles.packageSection}>
-      <h2>Packages</h2>
+      <h2>My Packages</h2>
       <p>Every website I make includes my full service — same quality, same performance. Only the number of pages
         changes the price.</p>
 
@@ -16,13 +16,13 @@ const Package = () => {
 
           <div className={styles.packageDesc}>
             <div>
-              <p><strong>Estimated delivery time : </strong> <time dateTime="P7D">1 Week</time></p>
+              <p><strong>Estimated delivery time : </strong> <time dateTime="P2W">2 Weeks</time></p>
 
               <p><strong>Price: </strong> $900</p>
               <p>maintenance fee: free</p>
 
             </div>
-            <p>A landing page is always lighter than a regular website. It loads quick, explains quick -
+            <p className="p">A landing page is always lighter than a regular website. It loads quick, explains quick -
               resulting to quick client clarity and quick conversions.</p>
           </div>
         </article>
@@ -38,7 +38,7 @@ const Package = () => {
               <p>maintenance fee: $100/month</p>
 
             </div>
-            <p>A promotional site always has one simple goal and that is to bring general interest towards
+            <p className="p">A promotional site always has one simple goal and that is to bring general interest towards
               your agency and potentially boosting your sales.</p>
           </div>
         </article>
@@ -54,8 +54,8 @@ const Package = () => {
               <p>Maintenance Fee: $250/month</p>
 
             </div>
-            <p>Sometimes you might want to establish your business online from the root. And that is where I
-              come to make you a full scale business website for your agency.</p>
+            <p className="p">Sometimes you might want to establish your business online from the root. And that is where I
+              come to make you a full-scale business website for your agency that drives real growth through traffic and long-term profit.</p>
           </div>
         </article>
 
