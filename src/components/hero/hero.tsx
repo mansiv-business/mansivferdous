@@ -50,9 +50,9 @@ const Hero = () => {
       },
     });
 
-    tl.from(splitHeading.words, { y: 1500, opacity: 0.1, rotation: 20, duration: 1.7, })
-      .from(splitPara.lines, { y: 110, opacity: 0.1, rotation: 7, scaleY: 0.2, })
-      .from(Img, {
+    tl.from(splitHeading.words, { y: 150, opacity: 0.1, rotation: 10, duration: 1.1,})
+    tl.from(splitPara.lines, { y: 110, opacity: 0.1, rotation: 7, scaleY: 0.2, })
+    tl.from(Img, {
         xPercent: -110,
         duration: 0.8,
       })
@@ -83,4 +83,3 @@ const Hero = () => {
 }
 
 export default Hero
-
