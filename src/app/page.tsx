@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mansiv Al Ferdous | Web Designer & Next.js Developer",
     description: "Next.js & React expert building high-performance websites.",
-    creator: "@mansivbusiness"
+    creator: "@MansivFerdous"
   },
   openGraph: {
     title: "Mansiv Al Ferdous | Web Designer & Next.js Developer",
