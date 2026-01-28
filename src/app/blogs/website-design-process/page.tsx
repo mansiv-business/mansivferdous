@@ -7,14 +7,14 @@ import Footer from "@/components/footer/footer"
 
 
 export const metadata: Metadata = {
-  title: "Website Design Process: From Discovery to Launch. A Transparent look at Mansiv Al Ferdous's methodology",
+  title: "Website Design Process: From Discovery to Launch. A Transparent look at our methodology",
   description: "Learn the complete website design process from discovery to launch. A transparent look at how I build conversion-focused sites with Next.js in 2026.",
 
   twitter: {
     card: "summary_large_image",
     title: "Website Design Process: From Discovery to Launch.",
     description: "Learn the complete website design process from discovery to launch. A transparent look at how I build conversion-focused sites in 2026.",
-    creator: "@mansivferdous"
+    creator: "@MansivFerdous"
   },
   openGraph: {
     title: "Website Design Process: From Discovery to Launch.",
@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     url: "https://mansivferdous.com",
     siteName: "Mansiv Al Ferdous' Portfolio",
     type: "website",
+  },
+  alternates: {
+    canonical: "/blogs/website-design-process",
   },
 }
 const Page = () => {
