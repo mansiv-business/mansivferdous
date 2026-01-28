@@ -20,13 +20,10 @@ export const metadata: Metadata = {
   title: "Mansiv Al Ferdous | Web Designer & Next.js Developer",
   description: "Expert Web Designer specializing in Next.js & React. From high-performance landing pages to full-scale business sites. Clean code, SEO-optimized & scalable.",
   authors: [
-    {name: "Mansiv Al Ferdous", url:  "http://mansivferdous.com"}
+    {name: "Mansiv Al Ferdous", url:  "https://mansivferdous.com"}
   ],
   creator: "Mansiv Al Ferdous",
   publisher: "Mansiv Al Ferdous",
-  alternates: {
-    canonical: "/",
-  },
 };
 
 export default function RootLayout({
