@@ -1,27 +1,30 @@
-import Image from "next/image"
+import Image from 'next/image'
 import { Metadata } from 'next'
 
-import styles from "../website-pricing-breakdown-2026/individualBlog.module.css"
-import Header from "@/components/header/header"
-import Footer from "@/components/footer/footer"
-
+import Footer from '@/components/footer/footer'
+import Header from '@/components/header/header'
+import styles from "./individualBlog.module.css"
+import CtaButton from '@/components/ctaButton'
 
 export const metadata: Metadata = {
-  title: "Website Design Process: From Discovery to Launch. A Transparent look at Mansiv Al Ferdous's methodology",
-  description: "Learn the complete website design process from discovery to launch. A transparent look at how I build conversion-focused sites with Next.js in 2026.",
+  title: "How Much Does a Website Cost in 2026? Pricing Breakdown for Business & SaaS by Mansiv Al Ferdous",
+  description: "A simple 2026 website cost breakdown for businesses and SaaS. Learn price ranges, site types, and what impacts your website budget",
 
   twitter: {
     card: "summary_large_image",
-    title: "Website Design Process: From Discovery to Launch.",
-    description: "Learn the complete website design process from discovery to launch. A transparent look at how I build conversion-focused sites in 2026.",
-    creator: "@mansivferdous"
+    title: "2026 website cost breakdown for SaaS and commercial websites",
+    description: "Website costs range from $500 to $150,000+ in 2026. Get realistic pricing for landing pages, business websites, and SaaS platforms—from freelancers to agencies.",
+    creator: "@MansivFerdous"
   },
   openGraph: {
-    title: "Website Design Process: From Discovery to Launch.",
-    description: "Learn the complete website design process from discovery to launch. A transparent look at how I build conversion-focused sites in 2026.",
+    title: "Mansiv Al Ferdous | Web Designer & Next.js Developer",
+    description: "Website costs range from $500 to $150,000+ in 2026. Get realistic pricing for landing pages, business websites, and SaaS platforms.",
     url: "https://mansivferdous.com",
     siteName: "Mansiv Al Ferdous' Portfolio",
     type: "website",
+  },
+  alternates: {
+    canonical: "/blogs/website-pricing-breakdown-2026",
   },
 }
 const Page = () => {
@@ -32,298 +35,284 @@ const Page = () => {
             <main className={styles.main}>
                 <article>
                     <header>
-                        <span>A transparent look at Mansiv Al Ferdous's webdesign process. <Image src="/images/portfolioImg.png" alt="author's image" width={50} height={50} /></span>
-                        <h1>Website Design Process: From Discovery to Launch</h1>
-                        <h2 className={styles.headerP}>A transparent look at the methodology behind high-converting digital experiences.</h2>
+                        <span>Website pricing breakdown by Mansiv Al Ferdous. <Image src="/images/portfolioImg.png" alt="author's image" width={50} height={50}/></span>
+                        <h1>How Much Does a Website Cost in 2026? Pricing Breakdown for Business & SaaS</h1>
 
-                        <p className={styles.headerP}><strong>The Reality:</strong> Most clients think they need a 'beautiful website'. What they actually need is a strategic digital asset that generates leads, ranks on search engines, and converts visitors into customers—all of which requires a transparent process and strategy.</p>
-                        <Image src="/images/blog2-logo.svg" height={200} width={376} alt='website cost breakdown image' className={styles.img} />
+                        <p className={styles.headerP}>Website pricing confuses most business owners—and for good reason. The cost to build a website ranges from as low as $120 to upward of $50,000, depending on what you actually need. The type of website you're building, the features required, and the level of design and development quality all play major roles in determining the final price. This guide breaks down realistic 2026 pricing by website type, so you can budget confidently and avoid expensive surprises.</p>
+                        <Image src="/images/blog1-logo.svg" height={200} width={376} alt='website cost breakdown image' className={styles.img}/>
 
                     </header>
 
                     <section className={styles.individualBlogSection}>
-                        <h2>TL;DR: The Complete Website Design Journey</h2>
-                        <p>Building a successful website takes 1-16 weeks depending on complexity. The process involves four phases: Discovery & Strategy, Design & Prototyping, Development & Integration, and Launch & Optimization. Unlike traditional agencies, I prioritize conversion-focused copywriting and SEO from day one—not as afterthoughts.</p>
+                        <h2>What Actually Affects Website Cost?</h2>
+                        <p className={styles.hP}>Before diving into specific numbers, here's what drives your website investment:</p>
+
+                        <ul>
+                            <li>Design quality – Template-based designs cost less; custom designs require more time and expertise.</li>
+                            <li>Number of pages – More pages mean more design and development work.</li>
+                            <li>Features & functionality – Forms, user authentication, dashboards, payment processing, and CMS integration all add complexity.</li>
+                            <li>Content creation – Professional copywriting and custom imagery increase costs.</li>
+                            <li>Tech stack choice – Static sites are simpler; SaaS platforms with databases and APIs are more complex.</li>
+                            <li>Ongoing maintenance – Updates, security, and hosting are recurring expenses are recurring expenses</li>
+                        </ul>
                     </section>
 
                     <section className={styles.individualBlogSection}>
-                        <header>
-                            <h2>Phase 1: Discovery & Strategy (The Blueprint)</h2>
-                            <p><strong className={styles.hP}>The Goal:</strong> Align your business objectives with what your target audience actually needs.</p>
-
-                            <p>This phase prevents building the wrong thing or building the right thing wrong. Here's how we avoid both.</p>
-                        </header>
-
-                        <h3>Key Activities: </h3>
-                        <dl>
-                            <dt>Stakeholder Workshops</dt>
-                            <dd>Strategic conversations about your revenue goals, target markets, and competitive positioning. We define what specific actions you want visitors to take and what business outcomes define success.</dd>
-
-                            <dt>Competitor Analysis</dt>
-                            <dd>I analyze what's actually driving conversions in your industry. Which CTAs get clicks? What messaging resonates? Where are the gaps we can exploit to differentiate you?</dd>
-
-                            <dt>User Persona Mapping</dt>
-                            <dd>Detailed profiles of your ideal customers. A B2B software buyer behaves completely differently than a consumer shopper. Understanding these personas shapes your site's navigation, language, and content structure.</dd>
-
-                            <dt>Sitemap &amp; Information Architecture</dt>
-                            <dd>This determines page hierarchy and how pages connect through internal links. Good architecture creates intuitive navigation for humans while giving search engines and AI chatbots clear content relationships.</dd>
-
-                            <dt>Content Strategy</dt>
-                            <dd>I plan conversion-focused copy during discovery, not after design. Every page gets a predetermined purpose (inform, convert, nurture) and clear messaging hierarchy. When copy and design develop together, they reinforce each other.</dd>
-                        </dl>
-
-                        <aside aria-label="Transparency Note">
-                            <h4 style={{ marginTop: "10dvh" }}>Transparency Note: </h4>
-                            <p style={{ marginTop: "2dvh" }}>Discovery takes 2-5 days for smaller projects, up to 2 weeks for complex sites. This prevents scope creep by documenting exactly what we're building and why.</p>
-                        </aside>
-
-                        <p><strong className={styles.hP}>Deliverable: </strong>Discovery document with user personas, competitive analysis, approved sitemap, content strategy, and project roadmap with milestones.</p>
-
-                    </section>
-
-                    <section className={styles.individualBlogSection}>
-                        <header>
-                            <h2>Phase 2: Design & Prototyping (The Visuals)</h2>
-                            <p><strong className={styles.hP}>The Goal:</strong> Transform strategy into a visual language that guides users toward conversion.</p>
-
-                            <p>Design is visual problem-solving. Every color, font choice, and spacing decision either helps or hinders your visitor's journey to becoming a customer.</p>
-                        </header>
-
-                        <section>
-                            <h3>The Process</h3>
-                            <dl>
-                                <dt>Wireframing (Structure First)</dt>
-                                <dd>Low-fidelity layouts that map out page structure and content placement. These answer: Where should CTAs be positioned? How many clicks to convert? Is the information hierarchy clear? We make structural decisions first, then layer on aesthetics.</dd>
-
-                                <dt>Visual Design (The Polish)</dt>
-                                <dd>
-                                    High-fidelity design including:
-                                    <ul>
-                                        <li><strong>Moodboards:</strong> Reference images and style examples that establish visual direction.</li>
-                                        <li><strong>Typography Systems:</strong> Font selections balancing readability with brand personality.</li>
-                                        <li><strong>Strategic Color Palettes:</strong> Colors chosen for brand alignment, accessibility standards, and conversion psychology.</li>
-                                        <li><strong>Component Design:</strong> Buttons, cards, forms designed once and used consistently.</li>
-                                    </ul>
-                                </dd>
-                            </dl>
-                        </section>
-
-
+                        <h2>Website Cost by Type</h2>
                         <article>
-                            <h3>2026 Design Principles: </h3>
+                            <h3>A. Landing Pages (Conversion-Focused)</h3>
+                            <p><strong className={styles.hP}>Best for: </strong>Product launches, ad campaigns, lead generation, testing MVPs.</p>
+
+                            <p>Landing pages are single-page websites built to drive one specific action—whether that's capturing emails, generating leads, or driving sales. A single landing page typically costs between $1,000 and $5,000.</p>
+
+                            <h4>What's included:</h4>
                             <ul>
-                                <li><strong>Mobile-first approach:</strong> Design for small screens first (60%+ of traffic is mobile).</li>
-                                <li><strong>Micro-animations:</strong> Subtle movements that guide attention without slowing performance.</li>
-                                <li><strong>Accessibility-first:</strong> Proper contrast, readable fonts, semantic structure.</li>
-                                <li><strong>Performance-optimized visuals:</strong> Modern formats (WebP/AVIF) and lazy loading.</li>
-                            </ul>
-                        </article>
-
-
-                        <p><strong className={styles.hP}>Deliverable:</strong> High-fidelity designs for all pages, design system documentation, and development-ready assets.</p>
-
-                    </section>
-
-                    <section className={styles.individualBlogSection}>
-                        <header>
-                            <h2>Phase 3: Development & Integration (The Build)</h2>
-                            <p><strong className={styles.hP}>The Goal:</strong> Transform approved designs into a blazing-fast, SEO-optimized website.</p>
-                        </header>
-
-                        <article>
-                            <h3>Tech Stack & Why It Matters:</h3>
-                            <section>
-                                <h4><a href="https://nextjs.org/" target="_blank" rel="noopener">Next.js (React Framework)</a> — Solves critical problems:</h4>
-                                <ul>
-                                    <li><strong>Server-side rendering:</strong> Pages load instantly—users see content immediately.</li>
-                                    <li><strong>Built-in SEO optimization:</strong> Dynamic meta tags and automatic sitemaps for better rankings.</li>
-                                    <li><strong>Automatic image optimization:</strong>  Images compressed and served in modern formats (crucial for Google's speed benchmarks).</li>
-                                    <li><strong>Clean, maintainable code:</strong> Clean, maintainable code: Features built faster, issues fixed quicker.</li>
-                                </ul>
-                            </section>
-
-                            <section>
-                                <h4>Deployment on <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">Vercel</a>/<a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">Netlify</a> — Provides:</h4>
-                                <ul>
-                                    <li><strong>Global CDN:</strong> Site loads fast whether someone's in New York or Tokyo.</li>
-                                    <li><strong>Automatic HTTPS and security:</strong> Enterprise-level protection.</li>
-                                    <li><strong>Automatic image optimization:</strong>  Images compressed and served in modern formats (crucial for Google's speed benchmarks).</li>
-                                    <li><strong>Zero-downtime deployments:</strong> Updates happen invisibly.</li>
-                                </ul>
-                            </section>
-                        </article>
-
-                        <article>
-                            <h3>Focus Areas During Development: </h3>
-                            <section>
-                                <h4>Mobile Responsiveness: </h4>
-                                <p> Built mobile and desktop design together using CSS Grid and Flexbox. Adapts beautifully to any screen size.</p>
-                            </section>
-
-                            <section>
-                                <h4>SEO Optimization — Built into the foundation:</h4>
-                                <ul>
-                                    <li>Semantic HTML5 with proper heading hierarchy.</li>
-                                    <li>Schema.org structured data (helps AI agents understand and recommend your content).</li>
-                                    <li>Optimized meta tags, Open Graph images, XML sitemaps.</li>
-                                    <li>Clean URL structure and strategic internal linking.</li>
-                                </ul>
-                            </section>
-
-                            <section>
-                                <h4>Performance Engineering — Speed impacts rankings and conversions:</h4>
-                                <ul>
-                                    <li>Lazy loading and code splitting.</li>
-                                    <li>Optimized font loading and caching.</li>
-                                    <li><strong>Target:</strong> Lighthouse scores above 90.</li>
-                                </ul>
-                            </section>
-
-                            <section>
-                                <h4>Accessibility Implementation: </h4>
-                                <p> WCAG 2.1 AA compliance, keyboard navigation, screen reader optimization, proper contrast ratios.</p>
-                            </section>
-                        </article>
-
-                        <p><strong className={styles.hP}>Timeline:</strong> 2-10 days for landing pages to 4-8 weeks for complex business websites.</p>
-
-                    </section>
-
-                    <section className={styles.individualBlogSection}>
-                        <header>
-                            <h2>Phase 4: Launch & Optimization (The Deployment)</h2>
-                            <p><strong className={styles.hP}>The Goal:</strong> Deploy with confidence, then continuously improve based on real user data.</p>
-                        </header>
-
-                        <section>
-                            <h3>Pre-Launch Quality Assurance: </h3>
-                            <ul>
-                                <li>Cross-browser and device testing.</li>
-                                <li>Performance benchmarking and Core Web Vitals testing.</li>
-                                <li>Every form, link, and button verified.</li>
-                                <li>SEO pre-flight (meta tags, sitemap, analytics setup).</li>
+                                <li>Hero section with compelling headline</li>
+                                <li>Clear call-to-action (CTA)</li>
+                                <li>Lead capture form</li>
+                                <li>Basic analytics integration</li>
+                                <li>Mobile-responsive design</li>
                             </ul>
 
-                        </section>
-
-                        <section>
-                            <h3>The Launch Process: </h3>
-                            <ol>
-                                <li><strong>Soft Launch to Staging —</strong> Deploy to a private testing environment for your final review and approval before going public.</li>
-                                <li><strong>DNS Configuration —</strong> Set up your domain properly to ensure your site switches over without any downtime or broken links.</li>
-                                <li><strong>Production Deployment —</strong> Make your site live to the world with monitoring systems in place to catch any issues immediately.</li>
-                                <li><strong>Post-Launch Monitoring —</strong>  Active monitoring for 48-72 hours to ensure everything performs as expected under real traffic.</li>
-                            </ol>
-
-                        </section>
-
-                        <article>
-                            <h3>The "Transparent" Edge: Launch is Just the Beginning</h3>
-                            <p>Your first launch is an educated hypothesis. Real optimization happens with actual user data.</p>
-
-
-                            <h4>Post-Launch Activities:</h4>
+                            <h4>Price range:</h4>
                             <ul>
-                                <li><strong>Analytics Review:</strong> Traffic patterns, user flows, conversion funnels.</li>
-                                <li><strong>Heatmap Analysis:</strong> Where users click, scroll, and what they ignore.</li>
-                                <li><strong>A/B Testing:</strong> Testing headlines, CTAs, and layouts to find what converts better.</li>
-                                <li><strong>Performance Monitoring:</strong> Ongoing speed optimization.</li>
-                                <li><strong>Content Updates:</strong>  Refining based on search trends and feedback.</li>
+                                <li>Freelancer: $500–$2,500</li>
+                                <li>Agency: $2,000–$5,000</li>
                             </ul>
 
-                            <p>This is why I offer ongoing maintenance. Your website should evolve with your business, not sit static.</p>
+                            <p><strong className={styles.hP}>Timeline: </strong>3–7 days for freelancers, 1–2 weeks for agencies.</p>
 
                         </article>
 
+
+                        <article>
+                            <h3>B. Promotional / Marketing Websites</h3>
+                            <p><strong className={styles.hP}>Best for: </strong>Startups, service providers, personal brands, consultants.</p>
+
+                            <p>These are small-to-mid-sized websites (typically 3–7 pages) designed to showcase your business, build credibility, and convert visitors into customers.</p>
+
+                            <h4>What's included:</h4>
+                            <ul>
+                                <li>Home, About, Services, Contact pages.</li>
+                                <li>Responsive design for all devices.</li>
+                                <li>Basic SEO structure.</li>
+                                <li>Basic analytics integration</li>
+                                <li>Optional CMS for easy updates.</li>
+                            </ul>
+
+                            <h4>Price range:</h4>
+                            <ul>
+                                <li>Freelancer: $1,000–$5,000</li>
+                                <li>Agency: $5,000–$15,000</li>
+                            </ul>
+
+                            <p><strong className={styles.hP}>Timeline: </strong>2–4 weeks.</p>
+                            <p><strong className={styles.hP}>Who this is ideal for: </strong>Small businesses that need an online presence without complex functionality.</p>
+
+                        </article>
+
+                        <article>
+                            <h3>C. Business Websites (Service-Based)</h3>
+                            <p><strong className={styles.hP}>Best for: </strong>Agencies, local businesses, B2B companies, professional services.</p>
+
+                            <p>Business websites typically fall between $1,000 and $50,000, with small local businesses starting around $650 and medium-sized businesses investing $15,000 to $50,000 for more advanced features.</p>
+
+                            <h4>What's included:</h4>
+                            <ul>
+                                <li>Multiple service/product pages.</li>
+                                <li>Case studies and testimonials.</li>
+                                <li>Blog or resource section.</li>
+                                <li>Contact forms and lead capture.</li>
+                                <li>CMS integration.</li>
+                                <li>SEO-friendly structure.</li>
+                                <li>Integration with CRM or email marketing tools.</li>
+                            </ul>
+
+                            <h4>Price range:</h4>
+                            <ul>
+                                <li>Freelancer: $2,500–$10,000</li>
+                                <li>Agency: $10,000–$50,000</li>
+                            </ul>
+
+                            <p><strong className={styles.hP}>Timeline: </strong>4–12 weeks.</p>
+                            <p><strong className={styles.hP}>Maintenance expectations: </strong>Budget $100–$500/month for updates, security, and content management.</p>
+
+                        </article>
+
+                        <article>
+                            <h3>D. SaaS Websites (With Product Logic)</h3>
+                            <p><strong className={styles.hP}>Best for: </strong>SaaS startups, tech companies, platforms with user dashboards.</p>
+
+                            <p>SaaS websites are the most complex because they combine marketing pages with actual application functionality—user authentication, dashboards, payment processing, and database management.</p>
+
+                            <h4>What's included:</h4>
+                            <ul>
+                                <li>Marketing/landing pages.</li>
+                                <li>User authentication (login/signup).</li>
+                                <li>User dashboards and account management.</li>
+                                <li>Admin panels.</li>
+                                <li>Payment gateway integration.</li>
+                                <li>API integrations with third-party tools.</li>
+                                <li>Scalable cloud infrastructure.</li>
+                                <li>Security and compliance (GDPR, HIPAA if needed).</li>
+                            </ul>
+
+                            <h4>Price range:</h4>
+                            <ul>
+                                <li>Freelancer/Small Team: $15,000–$60,000 (MVP)</li>
+                                <li>Agency/Full Build: $50,000–$150,000+</li>
+                            </ul>
+
+                            <p>Building a SaaS application typically ranges from $50,000 to $150,000 for a minimum viable product (MVP), with more complex platforms potentially exceeding $250,000.</p>
+
+                            <p><strong className={styles.hP}>Timeline: </strong>3–9+ months depending on complexity.</p>
+                            <p><strong className={styles.hP}>Ongoing development: </strong>Unlike static websites, SaaS platforms require continuous development for new features, bug fixes, and scaling. Expect $5,000–$20,000+ per month for ongoing development and maintenance.</p>
+
+                        </article>
                     </section>
 
-
                     <section className={styles.individualBlogSection}>
-                        <h2>The Timeline Matrix</h2>
+                        <h2>One-Time Cost vs Ongoing Cost</h2>
+                        <p>Understanding both upfront and recurring expenses helps you plan realistically.</p>
+
                         <table>
+                            <caption>Comparison of One-Time vs. Ongoing Website Costs in 2026</caption>
                             <thead>
                                 <tr>
-                                    <th scope='col'>Project Type</th>
-                                    <th scope='col'>Complexity</th>
-                                    <th scope='col'>Timeline (based on my project)</th>
-                                    <th scope='col'>Starting Price (for my services)</th>
+                                    <th scope='col'>One Time Costs</th>
+                                    <th scope='col'>Ongoing Costs</th>
                                 </tr>
                             </thead>
+
                             <tbody>
                                 <tr>
-                                    <th scope='row'>Landing Page</th>
-                                    <td>Single-purpose page with clear CTA and conversion focus.</td>
-                                    <td>1-2 Weeks</td>
-                                    <td>$900</td>
+                                    <td>Initial design & development</td>
+                                    <td>Domain renewal ($10–$30/year)</td>
                                 </tr>
                                 <tr>
-                                    <th scope='row'>Promotional Site</th>
-                                    <td>3-5 pages with brand storytelling and animation.</td>
-                                    <td>3-5 Weeks</td>
-                                    <td>$1,200</td>
+                                    <td>Content creation (copy, images)</td>
+                                    <td>Hosting ($5–$500+/month)</td>
                                 </tr>
                                 <tr>
-                                    <th scope='row'>Business Website</th>
-                                    <td>10+ pages with blog, services, and SEO foundation.</td>
-                                    <td>4-6 Weeks</td>
-                                    <td>$1,500-$2,000</td>
+                                    <td>Brand assets (logo, graphics)</td>
+                                    <td>SSL certificate (often included in hosting)</td>
                                 </tr>
                                 <tr>
-                                    <th scope='row'>Custom Web App</th>
-                                    <td>Complex UX, database integration, user authentication.</td>
-                                    <td>Depends</td>
-                                    <td>Custom Quote</td>
+                                    <td>Initial SEO setup</td>
+                                    <td>Content updates & maintenance</td>
+                                </tr>
+                                <tr>
+                                    <td>Launch and deployment</td>
+                                    <td>Security monitoring & updates</td>
+                                </tr>
+
+                                <tr>
+                                    <td>N/A</td>
+                                    <td>Feature enhancements (SaaS)</td>
+                                </tr>
+                                <tr>
+                                    <td>N/A</td>
+                                    <td>Email marketing tools</td>
+                                </tr>
+                                <tr>
+                                    <td>N/A</td>
+                                    <td>Analytics and tracking tools</td>
                                 </tr>
                             </tbody>
                         </table>
 
-                        <p><strong className={styles.hP}>Timeline Variables:</strong> Content readiness, revision rounds, third-party integrations, custom functionality, and client feedback turnaround time.</p>
+                        <p>For SaaS businesses specifically, ongoing costs are substantial—operational expenses including SEO, hosting, and maintenance typically account for 20-50% of total web-related costs.</p>
                     </section>
 
                     <section className={styles.individualBlogSection}>
-                        <h2>Why Transparency Matters: The "Mansiv Method"</h2>
-                        <p>I share my complete process and pricing publicly because I treat clients as partners, not transactions.</p>
+                        <h2>Cheap vs Professional Websites: What's the Real Difference?</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope='col'>Feature</th>
+                                    <th scope='col'>$200–$1,000 Websites</th>
+                                    <th scope='col'>$5,000–$50,000+ Websites</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope='row'>Customization</th>
+                                    <td>Template-based with minimal changes</td>
+                                    <td>Fully custom design tailored to your brand</td>
+                                </tr>
+                                <tr>
+                                    <th scope='row'>Performance</th>
+                                    <td>Basic optimization, slower load time</td>
+                                    <td>Optimized for speed, loads in under 2 seconds</td>
+                                </tr>
+                                <tr>
+                                    <th scope='row'>Scalability</th>
+                                    <td>Limited room for growth</td>
+                                    <td>Built to scale with your business</td>
+                                </tr>
+                                <tr>
+                                    <th scope='row'>Mobile Experience</th>
+                                    <td>Basic responsiveness</td>
+                                    <td>Refined mobile UX, tested across devices</td>
+                                </tr>
+                                <tr>
+                                    <th scope='row'>SEO Foundation</th>
+                                    <td>Minimal or DIY SEO</td>
+                                    <td>Professional SEO structure from day one</td>
+                                </tr>
+                                <tr>
+                                    <th scope='row'>Support</th>
+                                    <td>Minimal or no support after launch</td>
+                                    <td>Ongoing support and maintenance included</td>
+                                </tr>
+                                <tr>
+                                    <th scope='row'>Business Impact</th>
+                                    <td>Gets you online</td>
+                                    <td>Generates leads, builds trust, drives revenue</td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-                        <h3>The benefits:</h3>
-                        <dl>
-                            <dt>No Surprise Costs</dt>
-                            <dd>You know upfront what you're paying for and why. If scope changes, we discuss it before proceeding.</dd>
+                        <p><strong className={styles.hP}>The reality: </strong>75% of users judge a company's credibility based on its website design. A cheap website might save money upfront, but it often costs you more in lost opportunities and trust.</p>
+                    </section>
 
-                            <dt>Better Outcomes</dt>
-                            <dd>When you understand the strategy behind decisions, you provide better feedback. Informed clients create stronger results.</dd>
+                    <section className={styles.individualBlogSection}>
+                        <h2>How to Choose the Right Website for Your Business</h2>
+                        <p>Before you invest, answer these questions:</p>
 
-                            <dt>Long-Term Partnership</dt>
-                            <dd>Transparency builds trust for productive relationships beyond the initial build.</dd>
+                        <h3>1. What's your primary goal?</h3>
+                        <ul>
+                            <li>Lead generation → Landing page or marketing website</li>
+                            <li>Credibility & trust → Business website with case studies</li>
+                            <li>Selling products → E-commerce functionality</li>
+                            <li>User signups → SaaS platform</li>
+                        </ul>
 
-                            <dt>Educated Decision-Making</dt>
-                            <dd>Understanding the differences helps you choose the right solution for your needs and budget.</dd>
-                        </dl>
+                        <h3>2. What's your growth plan?</h3>
+                        <ul>
+                            <li>Need to scale fast? Invest in flexibility and scalability from the start</li>
+                            <li>Testing an idea? Start with an MVP and iterate</li>
+                        </ul>
+
+                        <h3>3. Budget vs ROI</h3>
+                        <ul>
+                            <li>A well-designed website isn't an expense—it's an investment that pays dividends through leads, sales, and brand equity</li>
+                            <li>Consider lifetime value: what's a new customer worth to your business?</li>
+                        </ul>
+
+                        <h3>4. Do you need ongoing development?</h3>
+                        <ul>
+                            <li>Static business websites need minimal updates</li>
+                            <li>SaaS platforms require continuous feature development and scaling</li>
+                        </ul>
 
                     </section>
 
                     <section className={styles.individualBlogSection}>
-                        <h2>What Makes My Process Different?</h2>
-
-                        <dl>
-                            <dt>SEO & Copywriting Aren't Afterthoughts</dt>
-                            <dd>I integrate conversion-focused copy and search optimization from discovery. Your site doesn't just look professional—it ranks well and converts visitors.</dd>
-
-                            <dt>Built for Speed & Performance</dt>
-                            <dd><a href="https://nextjs.org/">Next.js</a> ensures fast loading anywhere. Speed impacts both SEO rankings and user retention.</dd>
-
-                            <dt>AI-Ready Structure </dt>
-                            <dd>Proper semantic HTML and structured data ensure AI chatbots like ChatGPT can understand and recommend your content.</dd>
-
-                            <dt>Ongoing Support & Evolution</dt>
-                            <dd>Monthly maintenance keeps your site secure, fast, and up-to-date with evolving standards.</dd>
-                        </dl>
-
-                    </section>
-
-                    <section className={styles.individualBlogSection}>
-                        <h2>Ready to Start Your Project?</h2>
-                        <p><a href="https://cal.com/mansiv-business/15min" target="_blank" rel="noopener noreferrer">Start Your Project &rarr;</a> Book a 15-minute call to discuss your specific goals and timeline.</p>
-                        <p><strong>Questions about the process?</strong> Reach out via email or Instagram.</p>
+                        <h2>Ready to Build Your Website?</h2>
+                        <p>Not sure which type fits your business goals? Whether you need a high-converting landing page or a full-scale SaaS platform, understanding the right investment for your specific needs is crucial.</p>
+                        <CtaButton/>
+                        <p>Get a personalized breakdown based on your project requirements, timeline, and business goals—no pushy sales tactics, just honest pricing.</p>
                     </section>
                 </article>
             </main>
