@@ -9,7 +9,11 @@ import Footer from "@/components/footer/footer"
 export const metadata: Metadata = {
   title: "Mansiv Al Ferdous | My blog posts",
   description: "A list of blogs to dive deep into the fundamentals of websites and webdesign by Mansiv Al Ferdous. A Next.js based developer",
+  alternates: {
+    canonical: "/blogs",
+  },
 }
+
 const Page = () => {
   return (
     <>
@@ -45,5 +49,4 @@ const Page = () => {
 }
 
 export default Page
-
 
