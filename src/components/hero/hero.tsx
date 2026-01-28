@@ -80,7 +80,7 @@ const Hero = () => {
 
   return (
     <section ref={heroRef} className={styles.heroSection}>
-      <h1 ref={h1Ref} >Building Next.JS Websites That Drive real growth through Traffic and Conversions<span className={styles.heroImg} aria-hidden="true" ><div ref={imgRef}><Image src="/images/portfolioImg.png" alt="" width={300} height={300} role="presentation" /></div></span></h1>
+      <h1 ref={h1Ref} >Building Next.JS Websites That Drive Real Growth Through Traffic and Conversions<span className={styles.heroImg} aria-hidden="true" ><div ref={imgRef}><Image src="/images/portfolioImg.png" alt="" width={300} height={300} role="presentation" /></div></span></h1>
       <p ref={pRef}>I build UI/UX focused sites that are able to generate real traffic and revenue through conversions with Next.JS, Structured data and Semantic HTML.</p>
       <HeroCta />
     </section>
@@ -88,3 +88,4 @@ const Hero = () => {
 }
 
 export default Hero
+
