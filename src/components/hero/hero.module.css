@@ -12,9 +12,11 @@
 }
 .heroImg {
     width: min(7rem, 10%);
+    display: inline-block;
     position: absolute;
     height: auto;
     overflow: hidden;
+    width: clamp(2.8rem, 5vw, 7.5rem);
 }
 .heroImg img{
     width: 100%;
@@ -64,5 +66,3 @@
         border-radius: 0.5rem;
     }
 }
-
-
