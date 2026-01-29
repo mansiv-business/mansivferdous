@@ -50,8 +50,8 @@ const Hero = () => {
       },
     });
 
-    tl.from(splitHeading.words, { y: 150, opacity: 0.1, rotation: 8, duration: 1.1,})
-    tl.from(splitPara.lines, { y: 110, opacity: 0.1, rotation: 7, scaleY: 0.2, })
+    tl.from(splitHeading.words, { y: 150, opacity: 0.1, rotation: 7, duration: 0.8,})
+    tl.from(splitPara.lines, { y: 110, opacity: 0.1, rotation: 7, scaleY: 0.2, duration: 0.5 })
     tl.from(Img, {
         xPercent: -110,
         duration: 0.8,
