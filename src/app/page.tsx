@@ -1,6 +1,5 @@
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Metadata } from "next"
-import * as motion from "motion/react-client"
 
 import Footer from '@/components/footer/footer'
 import Header from '@/components/header/header'
@@ -10,8 +9,8 @@ import Service from '@/components/service/service'
 import Portfolio from '@/components/portfolio/portfolio'
 import Package from '@/components/package/package'
 import Cta from '@/components/cta/cta'
-import { scaleRight } from "@/lib/animation"
 import GsapRegister from "@/lib/gsap-registry"
+import Hr from "@/components/hr"
 
 export const metadata: Metadata = {
   
@@ -28,6 +27,9 @@ export const metadata: Metadata = {
     siteName: "Mansiv Al Ferdous' Portfolio",
     type: "website",
   },
+  alternates: {
+    canonical: "/",
+  },
 
 };
 const Home = () => {
@@ -42,9 +44,9 @@ const Home = () => {
         <About />
         <hr className="hidden" />
         <Service />
-        <motion.hr {...scaleRight} transition={{ duration: 0.6, type: "tween", ease: "easeIn"}}/>
+        <Hr/>
         <Portfolio />
-        <motion.hr {...scaleRight} transition={{ duration: 0.6, type: "tween", ease: "easeIn"}}/>
+        <Hr/>
         <Package />
         <Cta />
       </main>
