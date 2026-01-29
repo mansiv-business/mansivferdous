@@ -34,14 +34,14 @@ const Hero = () => {
 
     const splitPara = new SplitText(pRef.current, {
       type: "lines",
-      linesClass: "split-word",
+      linesClass: "split-line",
       mask: "lines",
     });
 
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: hero,
-        start: "top 90%",
+        start: "top 100%",
         once: true,
       },
       defaults: {
@@ -50,7 +50,7 @@ const Hero = () => {
       },
     });
 
-    tl.from(splitHeading.words, { y: 150, opacity: 0.1, rotation: 10, duration: 1.1,})
+    tl.from(splitHeading.words, { y: 150, opacity: 0.1, rotation: 8, duration: 1.1,})
     tl.from(splitPara.lines, { y: 110, opacity: 0.1, rotation: 7, scaleY: 0.2, })
     tl.from(Img, {
         xPercent: -110,
@@ -80,7 +80,7 @@ const Hero = () => {
 
   return (
     <section ref={heroRef} className={styles.heroSection}>
-      <h1 ref={h1Ref} >Building Next.JS Websites That Drive Real Growth Through Traffic and Conversions<span className={styles.heroImg} aria-hidden="true" ><div ref={imgRef}><Image src="/images/portfolioImg.png" alt="" width={300} height={300} role="presentation" /></div></span></h1>
+      <h1 ref={h1Ref} >Building Next.JS Websites That Drive real growth through Traffic and Conversions<div className={styles.heroImg} aria-hidden="true" ><div ref={imgRef}><Image src="/images/portfolioImg.png" alt="" width={300} height={300} role="presentation" /></div></div></h1>
       <p ref={pRef}>I build UI/UX focused sites that are able to generate real traffic and revenue through conversions with Next.JS, Structured data and Semantic HTML.</p>
       <HeroCta />
     </section>
@@ -88,4 +88,3 @@ const Hero = () => {
 }
 
 export default Hero
-
