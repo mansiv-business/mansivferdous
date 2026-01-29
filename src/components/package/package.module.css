@@ -3,7 +3,10 @@
     padding: min(6rem, 5%);
     background-color: #f5f5f5;
 }
-
+.packageSection strong{
+    font-family: var(--font-satoshi);
+    font-size: clamp(1.9rem, 2.5vw, 2.2rem);
+}
 .packageSection h2 {
     text-align: center;
     margin-bottom: 5vh;
@@ -35,13 +38,11 @@
 
 .packages {
     padding-top: min(8rem, 8%);
-    min-height: 235dvh;
-    min-height: 235vh;
+    min-height: 220dvh;
     position: relative;
 }
 .packageSection article {
-    min-height: 60dvh;
-    min-height: 60vh;
+    min-height: 65dvh;
     position: sticky;
     background-color: #f5f5f5;
 
