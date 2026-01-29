@@ -8,7 +8,7 @@ gsap.registerPlugin(SplitText, ScrollTrigger);
 
 export default function GsapRegister() {
   useGSAP(() => {
-
+  document.fonts.ready.then(() => {
     const mm = gsap.matchMedia();
 
     mm.add("(prefers-reduced-motion: no-preference)", () => {
@@ -27,12 +27,11 @@ export default function GsapRegister() {
           opacity: 0.2,
           y: 130,
           ease: "sine.out",
-          delay: 0.1,
           stagger: 0.07,
           duration: 1.3,
           scrollTrigger: {
             trigger: paragraph,
-            start: "top 95%",
+            start: "top 100%",
             once: true,
            },
           onComplete: () => split.revert(),
@@ -48,7 +47,6 @@ export default function GsapRegister() {
         });
 
         gsap.from(split.words, {
-          delay: 0.08,
           opacity: 0.1,
           y: 150,
           stagger: 0.07,
@@ -56,13 +54,15 @@ export default function GsapRegister() {
           ease: "sine.out",
           scrollTrigger: {
             trigger: heading,
-            start: "top 90%",
+            start: "top 100%",
             once: true,
           },
           onComplete: () => split.revert(),
         });
       });
     });
+
+  })
   }, []);
 
   return null;
@@ -121,7 +121,7 @@ export default function GsapRegister() {
           y: 150,
           stagger: 0.07,
           duration: 0.7,
-          ease: "power1.slow",
+          ease: "sine.out",
           scrollTrigger: {
             trigger: heading,
             start: "top 90%",
