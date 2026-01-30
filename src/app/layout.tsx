@@ -16,11 +16,11 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mansivferdous.com"),
+  metadataBase: new URL("https://www.mansivferdous.com"),
   title: "Mansiv Al Ferdous | Web Designer & Next.js Developer",
   description: "Expert Web Designer specializing in Next.js & React. From high-performance landing pages to full-scale business sites. Clean code, SEO-optimized & scalable.",
   authors: [
-    {name: "Mansiv Al Ferdous", url:  "https://mansivferdous.com"}
+    {name: "Mansiv Al Ferdous", url:  "https://www.smansivferdous.com"}
   ],
   creator: "Mansiv Al Ferdous",
   publisher: "Mansiv Al Ferdous",
