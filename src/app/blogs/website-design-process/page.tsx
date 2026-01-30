@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Website Design Process: From Discovery to Launch.",
     description: "Learn the complete website design process from discovery to launch. A transparent look at how I build conversion-focused sites in 2026.",
-    url: "https://mansivferdous.com",
+    url: "https://mansivferdous.com/blogs/website-design-process",
     siteName: "Mansiv Al Ferdous' Portfolio",
     type: "website",
   },
