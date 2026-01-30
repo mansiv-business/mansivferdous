@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://mansivferdous.com'
+  const baseUrl = 'https://www.mansivferdous.com'
 
   return [
     {
@@ -30,3 +30,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 }
+
