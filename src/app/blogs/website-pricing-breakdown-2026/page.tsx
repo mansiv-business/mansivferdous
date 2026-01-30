@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mansiv Al Ferdous | Web Designer & Next.js Developer",
     description: "Website costs range from $500 to $150,000+ in 2026. Get realistic pricing for landing pages, business websites, and SaaS platforms.",
-    url: "https://mansivferdous.com",
+    url: "https://mansivferdous.com/blogs/website-pricing-breakdown-2026",
     siteName: "Mansiv Al Ferdous' Portfolio",
     type: "website",
   },
