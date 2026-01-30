@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mansiv Al Ferdous | Web Designer & Next.js Developer",
     description: "Expert Web Designer specializing in Next.js & React.",
-    url: "https://mansivferdous.com",
+    url: "https://www.mansivferdous.com",
     siteName: "Mansiv Al Ferdous' Portfolio",
     type: "website",
   },
