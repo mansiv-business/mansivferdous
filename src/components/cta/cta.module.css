@@ -38,6 +38,7 @@
     color: #F5F5F5;
     font-weight: 600;
     z-index: 20;
+    border-bottom: #F5F5F5 0.4rem solid;
 }
 
 .contactSection .button:hover {
